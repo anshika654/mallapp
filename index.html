@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG- The Mini Globe </title>
+  <style>
+    /** footer **/
+.footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #111111;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #000000;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3 {
+    background-color: #111111;
+    border-top: 0.5px solid white;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</style>
+  </head>
+<body>
+  <div class="container">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Mini globe logo.jpg" width="130px", height="130px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                BRANDS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ROLEX</a></li>
+                <li><a class="dropdown-item" href="#">JIMMY CHOO</a></li>
+                <li><a class="dropdown-item" href="#">RADO</a></li>
+                <li><a class="dropdown-item" href="#">H&M</a></li>
+                <li><a class="dropdown-item" href="#">LOUIS VUITTON</a></li>
+                <li><a class="dropdown-item" href="#">TUMI</a></li>
+                <li><a class="dropdown-item" href="#">ZIMSONS</a></li>
+                <li><a class="dropdown-item" href="#">MIRROR & WITHIN</a></li>
+                <li><a class="dropdown-item" href="#">CENTAROM NICHE</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">MORE BRANDS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DINING
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TOSCANO</a></li>
+                <li><a class="dropdown-item" href="#">SUBWAY</a></li>
+                <li><a class="dropdown-item" href="#">ONE NIGHT IN BANKOK</a></li>
+                <li><a class="dropdown-item" href="#">FARZI CAFE</a></li>
+                <li><a class="dropdown-item" href="#">BADMASH</a></li>
+                <li><a class="dropdown-item" href="#">CHURMUR</a></li>
+                <li><a class="dropdown-item" href="#">AMADORA</a></li>
+                <li><a class="dropdown-item" href="#">SENCHEZ</a></li>
+                <li><a class="dropdown-item" href="#">BURGER KING</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">MORE HERE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ART GALLERY
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">100+ ARTISTS</a></li>
+                <li><a class="dropdown-item" href="#"></a>2000+ ARTWORKS</li>
+                <li><a class="dropdown-item" href="#">90+ EXHIBITIONS</a></li>
+                <li><a class="dropdown-item" href="#">13+ SUSCESSFUL YEARS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NIGHTLIFE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SHIRO</a></li>
+                <li><a class="dropdown-item" href="#">BADMAASH</a></li>
+                <li><a class="dropdown-item" href="#">ONE NIGHT IN BANKOK</a></li>
+                <li><a class="dropdown-item" href="#">FARZI CAFE</a></li>
+                <li><a class="dropdown-item" href="#">KITTY KO</a></li>
+                <li><a class="dropdown-item" href="#">HEARTBEAT</a></li>
+                <li><a class="dropdown-item" href="#">CLUB MARQUIS</a></li>
+                <li><a class="dropdown-item" href="#">SKYEEM</a></li>
+                <li><a class="dropdown-item" href="#">REBOUND CLUB</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SPA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">HOTELS</a></li>
+                <li><a class="dropdown-item" href="#">RESIDENCE</a></li>
+                <li><a class="dropdown-item" href="#">SPA & WELLBEING</a></li>
+                <li><a class="dropdown-item" href="#">OFFERS </a></li>
+                <li><a class="dropdown-item" href="#">EXPERIENCE</a></li>
+                <li><a class="dropdown-item" href="#">BOOK NOW</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EVENTS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">UPCOMING EVENTS</a></li>
+                <li><a class="dropdown-item" href="#">MIDNIGHT MADNESS</a></li>
+                <li><a class="dropdown-item" href="#">IN-STORE EVENTS</a></li>
+                <li><a class="dropdown-item" href="#">ART BENGLURU</a></li>
+                <li><a class="dropdown-item" href="#">FIT BENGLURU</a></li>
+                <li><a class="dropdown-item" href="#">TROUSSEAU WEEK</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CONTACTS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">e-mail: mgmall@8465gmail.com</a></li>
+                <li><a class="dropdown-item" href="#">phone no:7449495794</a></li>
+                <li><a class="dropdown-item" href="#">Instagram:MG_MALL_OFFICIAL</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </nav>
+  </div>
+  <div class="paragraph">
+    <center>
+      <img src="https://static.wixstatic.com/media/89e5b7_c9fc34c406934a288a7ed1a88a9d7347~mv2_d_2490_3510_s_4_2.png/v1/crop/x_315,y_784,w_1336,h_639/fill/w_289,h_138,al_c,usm_0.66_1.00_0.01/website%20frame.png"></center>
+    <center>
+      <h2 style="color: white;"><b><i>MG @ Mini Globe Mall</b></i></h2></center>
+   <center><p style="color: rgb(247, 190, 190);">Centrally located in the CBD (Central Business District) of Bangalore on Vittal Mallya Road, MG Mall is just 1.5 kms away from the MG Road – Brigade Road junction. <br>With a total built up area of 16 lakh sq ft, ,MG  @ Mini Globe Mall is completed by the UB Tower, Kingfisher Plaza, Concorde, Canberra & Comet Blocks! Each of these blocks stand out for their distinctive look, while yet combining to produce the feeling of a city.
+    </p></center> 
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card text-bg-dark mb-3" style="max-width: 14rem;">
+          <img 
+          src="https://ubcitybangalore.in/wp-content/uploads/2015/11/New-Project-19.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center><h5 class="card-text"><i>STORES</i></h5></center>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark mb-3" style="max-width: 14rem;">
+          <img src="https://ubcitybangalore.in/wp-content/uploads/2015/11/New-Project-21.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+             <center><H5 class="card-text"><i>ART GALLERY</i></H5></center>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark mb-3" style="max-width: 14rem;">
+           <img src="https://ubcitybangalore.in/wp-content/uploads/2015/11/dine.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <center><H5 class="card-text"><i>DINING</i></H5></center>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark mb-3" style="max-width: 14rem;">
+          <img src="https://ubcitybangalore.in/wp-content/uploads/2015/11/New-Project-20.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center><h5 class="card-text"><i>NIGHT LIFE</i></h5></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/e0/d9/9f/ub-city.jpg?w=1200&h=1200&s=1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <body style="background-color: rgb(11, 11, 10);">
+          <h1 style="color: black"><i>MG @ MINI GLOBE MALL</i></h1>
+          </body>
+          <button type="button" class="btn btn-outline-light"><h4><i>CONTACTS</i></h4></button>
+          <button type="button" class="btn btn-outline-light"><h4><i>LOCATION</i></h4></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <center><br><h2 style="color: rgb(250, 247, 247);"><i><b><u>&#9734 About the Stores.</u></b></i></h2></center>
+  <div id="carousel" class="carousel slide">
+    <div class="carousel-indicators"> 
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="http://www.emergerdp.com/wp-content/uploads/2016/07/mainimage_1920x500_leds.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-outline-light"><h1><i>BRANDS</i></h1></button>
+        </div>
+      </div>
+    </div>
+  </div>    
+  <br><div class="brand"></br>
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2015/11/ground-floor-view-of-stores-at-ub-city.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>LOUIS VUITTON</i></h5></center>
+                <p class="card-text">Luxury brand known for signature monogrammed handbags & luggage, plus chic apparel...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2016/12/Thumbnail-Image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>ROLEX</i></h5></center>
+                <p class="card-text">Rolex’s story began when founder Hans Wilsdorf created the first waterproof wristwatch ....</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>JIMMY CHOO</i></h5></center>
+                <p class="card-text">Jimmy Choo is today recognised as a brand synonymous with style, elegance....</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>COACH</i></h5></center>
+                <p class="card-text">Coach is a global fashion house founded in New York in 1941, inspired by the...</p>
+              </div>
+            </div>
+          </div>
+          <br><div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/New-Project-13-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>BURBERRY</i></h5></center>
+                <p class="card-text">Burberry, the iconic fashion brand was established in 1856 by Thomas Burberry...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>THE COLLECTIVE</i></h5></center>
+                <p class="card-text">The Collective is a one of its kind, super-premium retail concept, known for its breadth of.....</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/10/banner.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>TUMI</i></h5></center>
+                <p class="card-text">Stay organized with our elevated selection of business cases, casual backpack...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3" style="width: 18rem;">
+              <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <center><h5><i>MIRRORS & WITHIN</i></h5></center>
+                
+                <p class="card-text"></p>Mirrors & Within has been the quintessential beauty destination for Bangalorean's since...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </body>
+       <center><br><h2 style="color: rgb(250, 247, 247);"><i><b><u>&#9734 About the Food & Resturant.</u></b></i></h2></center>
+       <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://ubcitybangalore.in/wp-content/uploads/2021/10/New-Project-5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-outline-light"><h1><i>DINING</i></h1></button>
+            </div>
+          </div>
+        </div>
+          <div class="Dining"></br>
+            <div class="row">
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-34.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>SRIRACHA</i></h5></center>
+                      <p class="card-text">Sriracha in UB City brings to Bengaluru an eclectic selection of Asian cuisine. It offers a slice...</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-41.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>SHIRO</i></h5></center>
+                      <p class="card-text">Eclectic Cuisines I Varied Cultures | Impeccable Service I World Music | Signature Cocktails....</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>SANCHEZ</i></h5></center>
+                      <p class="card-text">Sanchez Restaurante and Cantina is a popular Mexican restaurant located in UB City...</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-39.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>FARZI CAFE</i></h5></center>
+                      <p class="card-text">The word "Farzi" can have many connotations, but at Farzi Cafe, it has just one, "creating an illusion"...</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2023/11/churmur.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>CHURMUR</i></h5></center>
+                      <p class="card-text">Best Chaat Corners in UB City Mall-Vittal Mallya Road, Bangalore</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2023/11/amadora.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>AMADORA</i></h5></center>
+                      <p class="card-text">Gourmet Ice Cream & Sorbet</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-37.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>SUBWAY</i></h5></center>
+                      <p class="card-text">Subway is an American restaurant franchise that primarily sells submarine sandwiches (subs)...</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2023/11/small-One-Night-In-Bangkok.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>ONE NIGNT IN BANGKOK</i></h5></center>
+                      <p class="card-text">One night in Bangkok is a Gentlemen’s Supper Club and an exclusive Speakeasy, located at UB City.....</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                  <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-35.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center><h5><i>LE BISRTO</i></h5></center>
+                      <p class="card-text">For a more casual dining experience, Le Bistro offers western cuisine, specializing in pizzas...</p>
+                    </div>
+                </div>
+              </div>
+              </div>
+          </div>
+           <center><br><h2 style="color: rgb(250, 247, 247);"><i><b><u>&#9734 About the Nightlife.</u></b></i></h2></center>
+           <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.etsystatic.com/isbl/895473/36815915/isbl_1680x420.36815915_jroe34xo.jpg?version=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-outline-light"><h1><i>NIGHT LIFE</i></h1></button>
+            </div>
+          </div>
+        </div>
+        <div class="Nightlife"></br>
+          <div class="row">
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-41.jpg"  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>SHIRO</i></h5></center>
+                  <p class="card-text">Eclectic Cuisines I Varied Cultures | Impeccable Service I World Music | Signature Cocktails....</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src=https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>BADMAASH</i></h5></center>
+                  <p class="card-text">The biggest, baddest Badmaash in town. Spectacular ambience, flavourful concoctions....</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://ubcitybangalore.in/wp-content/uploads/2023/11/small-One-Night-In-Bangkok.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>ONE NIGHT IN BANGKOK</i></h5></center>
+                  <p class="card-text">One night in Bangkok is a Gentlemen’s Supper Club and an exclusive Speakeasy, located at Mini Globe....</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://curlytales.com/wp-content/uploads/2019/09/xx3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>SKYEE</i></h5></center>
+                  <p class="card-text">Skye Club is a virtual world casino, where players create their own avatars and play real money in casino games in a 3D environment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://b.zmtcdn.com/data/reviews_photos/f42/402ace0db8aae1a118a57da23d6d8f42_1688643199.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>REBOUND CLUB</i></h5></center>
+                  <p class="card-text">Rebound Club is a great place for a group outing and many amazing options are available in drinks and food. It also has one of the largest dance floors and the club has hosted many popular artists like Ben Bohmer, Nina Kraviz</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://ubcitybangalore.in/wp-content/uploads/2021/12/thumbnail-39.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>FARZI CAFE</i></h5></center>
+                  <p class="card-text">The word "Farzi" can have many connotations, but at Farzi Cafe, it has just one, "creating an illusion"...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://www.thelalit.com/wp-content/uploads/2018/06/Kitty-KO-3-1000-750-768x576.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>KITTY KO</i></h5></center>
+                  <p class="card-text">Kitty Ko is an amalgamation of India’s best nightclub Kitty Su – Music, Fashion & Champagne of course, the award winning Asian masterpiece...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://onecms-res.cloudinary.com/image/upload/s--YoBWuMmj--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/tdy-migration/01-marquee-singapore-visual-02_0.jpg?itok=lWpP165a" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>CLUB MARQUEE</i></h5></center>
+                  <p class="card-text">MARQUEE Nightclub is the brand’s first and only venture in Mini Globe Mall Dance to the beats of stellar international DJs and entertainers like Steve Aoki, Rocky, Afrojack and many more...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center><br><h2 style="color: rgb(250, 247, 247);"><i><b><u>&#9734 About the Art Gallery.</u></b></i></h2></center>
+           <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.licdn.com/dms/image/C5616AQHFflLQ591XJg/profile-displaybackgroundimage-shrink_200_800/0/1517480006669?e=2147483647&v=beta&t=IKJOEQ4ZJmJkTjaZ4lHg1uTKIt2zOdl6ExhzJx_M_Oo" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-outline-light"><h1><i>ART GALLERY</i></h1></button>
+            </div>
+          </div>
+        </div>
+        <div class="Art Gallery"></br>
+          <div class="row">
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://sublimegalleria.com/wp-content/uploads/2023/12/SUNFLOWER-GANESH-84X36-1-350x230.jpg"  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>SUNFLOWER GANESH</i></h5></center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://sublimegalleria.com/wp-content/uploads/2023/12/15-350x230.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>ROSY</i></h5></center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://sublimegalleria.com/wp-content/uploads/2023/12/MYSORE-DASARA-36X50-350x230.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>MYSORE DHARA</i></h5></center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://sublimegalleria.com/wp-content/uploads/2023/12/ART-NOVEAU-36X48-1-350x230.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>OPHELIA</i></h5></center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                <img src="https://sublimegalleria.com/wp-content/uploads/2023/12/9-1-350x230.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5><i>BACK TO WORK</i></h5></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center><button type="button" class="btn btn-outline-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg><br><i>Follow on Instagram</i></button></center>
+        <footer>
+          <br><div class="foot-panel1">
+              Back to Top
+          </div>
+          <div class="foot-panel2">
+              <ul>
+                 <h3><u>Quick Links</u></h3>
+                 <a><i>Store Locator</i></a>
+                 <a><i>Privacy Policy</i></a>
+                 <a><i>Terms & User Agreements</i></a>
+                 <a><i>The Luxary Collection Magine</i></a>
+              </ul>
+              <ul>
+                <h3><u>Follow us</u></h3>
+                <br>
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></h1>
+              </ul>
+              <center><img src="Mini globe logo.jpg" width="240px" height="240px"></center>
+          </div>
+              <div class="foot-panel3">
+              <p>&#169; 2023 Mini Globe Mall| All rights reserved| Powered by Sublime</p>
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>  
+</html>
+ 
